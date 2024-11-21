@@ -6,7 +6,7 @@ const ngrok = require('@ngrok/ngrok');
 // Create webserver
 http.createServer((req, res) => {
 	res.writeHead(200, { 'Content-Type': 'text/html' });
-	res.end('Congrats you have created an ngrok web server');
+	res.end('Congrats you have created an ngrok web server via nodeJS app on Heroku');
 }).listen(8080, () => console.log('Node.js web server at 8080 is running...'));
 
 // Get your endpoint online
