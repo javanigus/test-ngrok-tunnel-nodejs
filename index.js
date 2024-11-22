@@ -17,7 +17,7 @@ http.createServer((req, res) => {
 // https://dashboard.ngrok.com/endpoints?sortBy=url&orderBy=asc
 (async function () {
     const listener = await ngrok.forward({
-        addr: 8080,
+        addr: process.env.PORT || 8080,
         authtoken_from_env: true,
         domain: "mayfly-amusing-equally.ngrok-free.app",
     });
